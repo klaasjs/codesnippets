@@ -1,0 +1,121 @@
+{
+    "Express with Router": {
+        "prefix": "exprr",
+        "body": [
+            "const express = require('express'),",
+            "      router = express.Router();",
+            "",
+            ""
+        ],
+        "description": "Require express with router."
+    },
+    
+    "Express with Test": {
+        "prefix": "exprt",
+        "body": [
+            "const express = require('express'),",
+            "      assert = require('assert'),",
+            "      bodyparser = require('body-parser'),",
+            "      request = require('supertest'),",
+            "      $1 = require('./$2');",
+            "",
+            ""
+        ],
+        "description": "Require express with router."
+    },
+    
+    "Router Get": {
+        "prefix": "rget",
+        "body": [
+            "router.get('/$1', function(request, response) {",
+            "    response.sendFile(__dirname + '/$2.json');",
+            "})"
+        ],
+        "description": "Router get method."
+    },
+    
+    "Router Post": {
+        "prefix": "rpost",
+        "body": [
+            "router.post('/$1', function(request, response) {",
+            "    $2",
+            "})"
+        ],
+        "description": "Router post method."
+    },
+    
+    "Router Delete": {
+        "prefix": "rdel",
+        "body": [
+            "router.delete('/$1', function(request, response) {",
+            "    response.sendStatus(200);",
+            "})"
+        ],
+        "description": "Router delete method."
+    },
+    
+    
+    "Router Export": {
+        "prefix": "rexport",
+        "body": [
+            "module.exports = router;"
+        ],
+        "description": "Exports router."
+    },
+    
+    "Describe": {
+        "prefix": "desc",
+        "body": [
+            "describe('$1', function() {",
+            "    $2",
+            "})"
+        ],
+        "description": "Describe"
+    },
+    
+    "Describe with app": {
+        "prefix": "mdesc",
+        "body": [
+            "describe('$1', function() {",
+            "    const app = express();",
+            "    app.use('/api', $1);",
+            "",
+            "    $2",
+            "})"
+        ],
+        "description": "Describe with initialized app"
+    },
+    
+    "It": {
+        "prefix": "it",
+        "body": [
+            "it('should $1', function(done) {",
+            "    $2",
+            "})"
+        ],
+        "description": "It"
+    },
+    
+    "Request Get": {
+        "prefix": "reqg",
+        "body": [
+            "request(app)",
+            "    .get('/api/$1')",
+            "    .set('Accept', 'application/json')",
+            "    .expect('Content-Type', /json/)",
+            "    .expect(200, done);"
+        ],
+        "description": "Test a GET request."
+    },
+    
+    "Request Post": {
+        "prefix": "reqp",
+        "body": [
+            "request(app)",
+            "    .post('/api/$1')",
+            "    .send($2)",
+            "    .expect(200, done);"
+        ],
+        "description": "Test a GET request."
+    }
+}

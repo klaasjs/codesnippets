@@ -1,0 +1,48 @@
+{
+    "Angular Controller": {
+		"prefix": "actrl",
+		"body": [
+            "/**",
+            " *",
+            " * @ngdoc controller",
+            " * @name module.controller.$1Controller",
+            " *",
+            " * @description",
+            " * $2",
+            " */",
+			"class $1Controller {",
+            "",
+            "    // @ngInject",
+            "    constructor() {",
+            "        $3",
+            "    }",
+            "}"
+		],
+		"description": "Generic AngularJS controller."
+	},
+    
+    "Angular Directive": {
+		"prefix": "adir",
+		"body": [
+            "/**",
+            " *",
+            " * @ngdoc directive",
+            " * @name module.directive.$1",
+            " * @restrict E",
+            " *",
+            " * @description",
+            " * $2",
+            " */",
+			"export default function $1(): ng.IDirective {",
+            "    return {",
+            "        template: ``,",
+            "        restrict: 'E',",
+            "        controller: () => {},",
+            "        link: (scope: ng.IScope, element: ng.IAugmentedJQuery, attributes: ng.IAttributes) => {",
+            "        }",
+            "    };",
+			"}"
+		],
+		"description": "Generic AngularJS directive."
+	}
+}
