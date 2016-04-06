@@ -1,0 +1,2 @@
+# Visual Studio Code snippets
+The key for developer productivity are, amongst others, to use as much predefined, well tested, source code as possible. This is a set of javascript / typescript code snippets I use every day.
