@@ -1,16 +1,67 @@
 {
+    /* Jasmine */
+    "Describe": {
+        "prefix": "desc",
+		"body": [
+            "describe('$1', () => {",
+            "    $2",
+            "});"
+		],
+		"description": "Describe a test"
+    },
+    
+    "It": {
+        "prefix": "itt",
+		"body": [
+            "it('should $1', () => {",
+            "    // arrange",
+            "    $2",
+            "",
+            "    // act",
+            "    $3",
+            "",
+            "    // assert",
+            "    expect(true).toBe(true);",
+            "});"
+		],
+		"description": "It should perform some action and expect some result."
+    },
+    
+    "cl": {
+        "prefix": "cl",
+		"body": [
+            "console.log('$1');"
+		],
+		"description": "Log to console."
+    },
+    
+    "void method": {
+        "prefix": "pfvoid",
+        "body": [
+            "/**",
+            " * @ngdoc method",
+            " * @name $1",
+            " * @param ",
+            " * @returns void",
+            " */",
+            "public $1(): void {",
+            "    $2",
+            "}"
+        ],
+        "description": "A public void class method with angular documentation."
+    },
+    
     "Angular Controller": {
 		"prefix": "actrl",
 		"body": [
             "/**",
-            " *",
             " * @ngdoc controller",
             " * @name module.controller.$1Controller",
             " *",
             " * @description",
             " * $2",
             " */",
-			"class $1Controller {",
+			"export default class $1Controller {",
             "",
             "    // @ngInject",
             "    constructor() {",
@@ -25,7 +76,6 @@
 		"prefix": "adir",
 		"body": [
             "/**",
-            " *",
             " * @ngdoc directive",
             " * @name module.directive.$1",
             " * @restrict E",
@@ -35,7 +85,7 @@
             " */",
 			"export default function $1(): ng.IDirective {",
             "    return {",
-            "        template: ``,",
+            "        template:  ``,",
             "        restrict: 'E',",
             "        controller: () => {},",
             "        link: (scope: ng.IScope, element: ng.IAugmentedJQuery, attributes: ng.IAttributes) => {",

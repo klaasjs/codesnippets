@@ -1,4 +1,43 @@
 {
+    /* Gulp */
+    "Gulp Task": {
+        "prefix": "gtask",
+        "body": [
+            "gulp.task('$1', function() {",
+            "    $2",
+            "});"
+        ],
+        "description": "Default Gulp task."
+    },
+    
+    "Gulp Watch": {
+        "prefix": "gwatch",
+        "body": [
+            "gulp.watch('./$1', ['$2']);"
+        ],
+        "description": "Gulp watch and start task."
+    },
+    
+    "Gulp Watch with callback": {
+        "prefix": "gwatchcb",
+        "body": [
+            "gulp.watch('./$1').on('change', function(file) {",
+            "    $2",
+            "});"
+        ],
+        "description": "Gulp watch and start task."
+    },
+    
+    /* Misc /*/
+    "Log to console": {
+        "prefix": "cl",
+        "body": [
+            "console.log('$1');"
+        ],
+        "description": "Log to console."
+    },
+    
+    /* Express */
     "Express with Router": {
         "prefix": "exprr",
         "body": [
@@ -63,6 +102,7 @@
         "description": "Exports router."
     },
     
+    /* Jasmine */
     "Describe": {
         "prefix": "desc",
         "body": [
