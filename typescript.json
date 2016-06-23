@@ -1,4 +1,5 @@
 {
+        
     /* Jasmine */
     "Describe": {
         "prefix": "desc",
@@ -94,5 +95,26 @@
 			"}"
 		],
 		"description": "Generic AngularJS directive."
-	}
+	},
+
+    "Angular Service": {
+        "prefix": "aserv",
+        "body": [
+           "/**",
+            " * @ngdoc service",
+            " * @name module.services.$1Service",
+            " *",
+            " * @description",
+            " * $2",
+            " */",
+			"export default class $1Service {",
+            "",
+            "    // @ngInject",
+            "    constructor() {",
+            "        $3",
+            "    }",
+            "}"
+        ],
+		"description": "Generic AngularJS service."
+    }
 }
