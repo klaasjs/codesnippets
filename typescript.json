@@ -8,7 +8,7 @@
             "    $2",
             "});"
 		],
-		"description": "Describe a test"
+		"description": "Describe a test."
     },
     
     "It": {
@@ -99,7 +99,7 @@
             "    };",
 			"}"
 		],
-		"description": "Generic AngularJS directive."
+		"description": "A generic AngularJS directive."
 	},
 
     "Angular Service": {
@@ -141,6 +141,6 @@
             "    }",
             "}"
         ],
-		"description": "Generic Model."
+		"description": "A generic model."
     }
 }
