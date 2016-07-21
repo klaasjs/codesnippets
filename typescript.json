@@ -3,17 +3,17 @@
     /* Jasmine */
     "Describe": {
         "prefix": "desc",
-		"body": [
+        "body": [
             "describe('$1', () => {",
             "    $2",
             "});"
-		],
-		"description": "Describe a test."
+        ],
+        "description": "Describe a test."
     },
     
     "It": {
         "prefix": "itt",
-		"body": [
+        "body": [
             "it('should $1', () => {",
             "    // arrange",
             "    $2",
@@ -24,16 +24,16 @@
             "    // assert",
             "    expect(true).toBe(true);",
             "});"
-		],
-		"description": "It should perform some action and expect some result."
+        ],
+        "description": "It should perform some action and expect some result."
     },
     
     "cl": {
         "prefix": "cl",
-		"body": [
+        "body": [
             "console.log('$1');"
-		],
-		"description": "Log to console."
+        ],
+        "description": "Log to console."
     },
     
     "void method": {
@@ -53,8 +53,8 @@
     },
     
     "Angular Controller": {
-		"prefix": "actrl",
-		"body": [
+        "prefix": "actrl",
+        "body": [
             "/**",
             " * @ngdoc controller",
             " * @name module.controller.$1Controller",
@@ -62,20 +62,20 @@
             " * @description",
             " * $2",
             " */",
-			"export default class $1Controller {",
+            "export default class $1Controller {",
             "",
             "    // @ngInject",
             "    constructor() {",
             "        $3",
             "    }",
             "}"
-		],
-		"description": "Generic AngularJS controller."
-	},
+        ],
+        "description": "Generic AngularJS controller."
+    },
     
     "Angular Directive": {
-		"prefix": "adir",
-		"body": [
+        "prefix": "adir",
+        "body": [
             "/**",
             " * @ngdoc directive",
             " * @name module.directive.$1",
@@ -86,7 +86,7 @@
             " *",
             " * @ngInject",
             " */",
-			"export default function $1(): ng.IDirective {",
+            "export default function $1(): ng.IDirective {",
             "    return {",
             "        template:  ``,",
             "        restrict: 'E',",
@@ -97,10 +97,10 @@
             "        link: (scope: ng.IScope, element: ng.IAugmentedJQuery, attributes: ng.IAttributes) => {",
             "        }",
             "    };",
-			"}"
-		],
-		"description": "A generic AngularJS directive."
-	},
+            "}"
+        ],
+        "description": "A generic AngularJS directive."
+    },
 
     "Angular Service": {
         "prefix": "aserv",
@@ -112,7 +112,7 @@
             " * @description",
             " * $2",
             " */",
-			"export default class $1Service {",
+            "export default class $1Service {",
             "",
             "    // @ngInject",
             "    constructor() {",
@@ -120,7 +120,7 @@
             "    }",
             "}"
         ],
-		"description": "Generic AngularJS service."
+        "description": "Generic AngularJS service."
     },
 
     "Generic Model": {
@@ -133,7 +133,7 @@
             " * @description",
             " * $2",
             " */",
-			"export default class $1Model {",
+            "export default class $1Model {",
             "",
             "    // @ngInject",
             "    constructor() {",
@@ -141,6 +141,6 @@
             "    }",
             "}"
         ],
-		"description": "A generic model."
+        "description": "A generic model."
     }
 }
