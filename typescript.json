@@ -89,6 +89,9 @@
             "        template:  ``,",
             "        restrict: 'E',",
             "        controller: () => {},",
+            "        controllerAs: 'ctrl',",
+            "        bindToController: {",
+            "        },",
             "        link: (scope: ng.IScope, element: ng.IAugmentedJQuery, attributes: ng.IAttributes) => {",
             "        }",
             "    };",
@@ -116,5 +119,26 @@
             "}"
         ],
 		"description": "Generic AngularJS service."
+    },
+
+    "Generic Model": {
+        "prefix": "mdl",
+        "body": [
+           "/**",
+            " * @ngdoc model",
+            " * @name module.services.$1Model",
+            " *",
+            " * @description",
+            " * $2",
+            " */",
+			"export default class $1Model {",
+            "",
+            "    // @ngInject",
+            "    constructor() {",
+            "        $3",
+            "    }",
+            "}"
+        ],
+		"description": "Generic Model."
     }
 }
