@@ -134,6 +134,32 @@
         "description": "A generic AngularJS directive."
     },
 
+    "Angular Component": {
+        "prefix": "acomp",
+        "body": [
+            "/**",
+            " * @ngdoc component",
+            " * @name module.component.$1",
+            " * @restrict E",
+            " *",
+            " * @description",
+            " * $2",
+            " *",
+            " * @ngInject",
+            " */",
+            "export default function $1(): ng.IComponentOptions {",
+            "    return {",
+            "        template:  ``,",
+            "        controller: () => {},",
+            "        controllerAs: 'ctrl',",
+            "        bindings: {",
+            "        },",
+            "    };",
+            "}"
+        ],
+        "description": "A generic AngularJS component."
+    },
+
     "Angular Service": {
         "prefix": "aserv",
         "body": [
