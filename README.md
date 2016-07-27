@@ -14,3 +14,5 @@ And make it yours:
 ```
 rm -rf .git
 ```
+
+Enjoy!
