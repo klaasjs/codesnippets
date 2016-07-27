@@ -5,7 +5,6 @@
         "description": "Export default"
     },
     
-    /* Jasmine */
     "Describe": {
         "prefix": "desc",
         "body": [
@@ -147,7 +146,7 @@
             " *",
             " * @ngInject",
             " */",
-            "export default function $1(): ng.IComponentOptions {",
+            "export default function $1Component(): ng.IComponentOptions {",
             "    return {",
             "        template:  ``,",
             "        controller: () => {},",

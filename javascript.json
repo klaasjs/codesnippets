@@ -1,5 +1,4 @@
 {
-    /* Gulp */
     "Gulp Task": {
         "prefix": "gtask",
         "body": [
@@ -28,7 +27,6 @@
         "description": "Gulp watch and start task."
     },
     
-    /* Misc /*/
     "Log to console": {
         "prefix": "cl",
         "body": [
@@ -37,7 +35,6 @@
         "description": "Log to console."
     },
     
-    /* Express */
     "Express with Router": {
         "prefix": "exprr",
         "body": [
@@ -102,7 +99,6 @@
         "description": "Exports router."
     },
     
-    /* Jasmine */
     "Describe": {
         "prefix": "desc",
         "body": [
@@ -123,7 +119,7 @@
             "    $2",
             "})"
         ],
-        "description": "Describe with initialized app"
+        "description": "Describe with initialized app."
     },
     
     "It": {
@@ -156,6 +152,6 @@
             "    .send($2)",
             "    .expect(200, done);"
         ],
-        "description": "Test a GET request."
+        "description": "Test a POST request."
     }
 }
