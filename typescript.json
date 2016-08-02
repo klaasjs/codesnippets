@@ -39,6 +39,12 @@
         ],
         "description": "Log to console."
     },
+
+    "cltest": {
+        "prefix": "cltest",
+        "body": ["console.log('Dit is een test.');"],
+        "description": "Log a test string to console."
+    },
     
     "void method": {
         "prefix": "pfvoid",
@@ -146,15 +152,15 @@
             " *",
             " * @ngInject",
             " */",
-            "export default function $1Component(): ng.IComponentOptions {",
-            "    return {",
-            "        template:  ``,",
-            "        controller: () => {},",
-            "        controllerAs: 'ctrl',",
-            "        bindings: {",
-            "        },",
-            "    };",
-            "}"
+            "const $1Component: ng.IComponentOptions = {",
+            "    template:  ``,",
+            "    controller: () => {},",
+            "    controllerAs: 'ctrl',",
+            "    bindings: {",
+            "    }",
+            "};",
+            "",
+            "export default $1Component;"
         ],
         "description": "A generic AngularJS component."
     },
@@ -199,5 +205,21 @@
             "}"
         ],
         "description": "A generic model."
+    },
+
+    "Public string property": {
+        "prefix": "pstr",
+        "body": [
+            "public $1: string = '';"
+        ],
+        "description": "A public string."
+    },
+
+    "Private string property": {
+        "prefix": "pristr",
+        "body": [
+            "private $1: string = '';"
+        ],
+        "description": "A public string."
     }
 }
