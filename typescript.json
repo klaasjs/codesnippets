@@ -190,7 +190,7 @@
         "prefix": "mdl",
         "body": [
            "/**",
-            " * @ngdoc model",
+            " * @ngdoc object",
             " * @name module.services.$1Model",
             " *",
             " * @description",
@@ -205,6 +205,34 @@
             "}"
         ],
         "description": "A generic model."
+    },
+
+    "Generic Validator": {
+        "prefix": "vld",
+        "body": [
+            "'use strict';",
+            "",
+            "/**",
+            " * @ngdoc object",
+            " * @name module.services.$1Validator",
+            " *",
+            " * @description",
+            " * $2",
+            " */",
+            "export default class $1Validator {",
+            "",
+            "    /**",
+            "     * @param {$3} $4",
+            "     * @param {string[]} errorMessages",
+            "     * @returns True is value is valid, false otherwise.",
+            "     */",
+            "    public static validate($4: $3, errorMessages?: string[]): boolean {",
+            "        $5",
+            "        return false;",
+            "    }",
+            "}"
+        ],
+        "description": "A generic validator."
     },
 
     "Public string property": {
