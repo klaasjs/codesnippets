@@ -9,6 +9,12 @@
         "prefix": "desc",
         "body": [
             "describe('$1', () => {",
+            "    let testClass: $1;",
+            "",
+            "    beforeEach(function() {",
+            "        testClass = new $1();",
+            "    });",
+            "",
             "    $2",
             "});"
         ],
@@ -38,6 +44,14 @@
             "console.log('$1');"
         ],
         "description": "Log to console."
+    },
+
+    "ConsoleLog a variable": {
+        "prefix": "clvar",
+        "body": [
+            "console.log('$1:', $1);"
+        ],
+        "description": "Log to variable to the console."
     },
 
     "cltest": {
@@ -249,5 +263,37 @@
             "private $1: string = '';"
         ],
         "description": "A public string."
+    },
+
+    "Public async method": {
+        "prefix": "asyncm",
+        "body": [
+            "/**",
+            " * @ngdoc method",
+            " * @name $1",
+            " * @methodOf ",
+            " * @description",
+            " *",
+            " * @return {ng.IPromise<$3>} $3.",
+            " */",
+            "public $1($2): ng.IPromise<$3> {",
+            "   let defer = this.$q.defer<$3>();",
+            "   $4",
+            "   return defer.promise;",
+            "}"
+        ],
+        "description": "A public async method."
+    },
+
+    "Q Service Dependency": {
+        "prefix": "qdep",
+        "body": "private $q: ng.IQService",
+        "description": "A private $q service dependency."
+    },
+
+    "ResourceService Dependency": {
+        "prefix": "resdep",
+        "body": "private resourceService: Core.Services.IResourceService",
+        "description": "A private resourseservice dependency."
     }
 }
