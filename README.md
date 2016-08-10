@@ -17,7 +17,8 @@ It targets AngularJS / NodeJS and Express. The snippets for NodeJS / Express are
 |desc     |Jasmine |describe a test.
 |itt      |Jasmine |perform a test.
 |actrl    |Angular |Generic AngularJS controller.
-|adctrl   |Angular |Generic AngularJS directive / component controller.
+|adctrl   |Angular |Generic AngularJS directive controller.
+|acctrl   |Angular |Generic AngularJS component controller.
 |adir     |Angular |Generic AngularJS directive.
 |acomp    |Angular |Generic AngularJS component.
 |aserv    |Angular |Generic AngularJS service class.
