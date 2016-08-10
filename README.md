@@ -47,7 +47,7 @@ It targets AngularJS / NodeJS and Express. The snippets for NodeJS / Express are
 |reqp     |Jasmine |Test a route with HTTP post.
 
 ## VSCode
-To display all available sippets open the command palette and select 'Insert Snippet.
+To display all available sippets open the command palette and select 'Insert Snippet'.
 
 ## Installation
 Move to your VSCode snippets path. Usually this is: \Users\%USERNAME%\AppData\Roaming\Code\User\Snippets.

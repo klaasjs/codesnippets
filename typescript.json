@@ -123,6 +123,33 @@
         ],
         "description": "Generic AngularJS directive controller."
     },
+
+    "Angular Component Controller": {
+        "prefix": "acctrl",
+        "body": [
+            "/**",
+            " * @ngdoc controller",
+            " * @name module.controller.$1Controller",
+            " *",
+            " * @description",
+            " * $2",
+            " */",
+            "class $1Controller implements ng.IComponentController {",
+            "",
+            "    // @ngInject",
+            "    constructor() {",
+            "    }",
+            "",
+            "    public $onInit(): void {",
+            "        $3",
+            "    }",
+            "",
+            "    public $onDestroy(): void {",
+            "    }",
+            "}"
+        ],
+        "description": "Generic AngularJS component controller."
+    },
     
     "Angular Directive": {
         "prefix": "adir",
