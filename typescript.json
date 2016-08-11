@@ -196,7 +196,6 @@
             "const $1Component: ng.IComponentOptions = {",
             "    template:  ``,",
             "    controller: () => {},",
-            "    controllerAs: 'ctrl',",
             "    bindings: {",
             "    }",
             "};",
