@@ -75,9 +75,41 @@
         ],
         "description": "A public void class method with angular documentation."
     },
+
+    "Import Component": {
+        "prefix": "impcmp",
+        "body": [
+            "import {$1Component} from './$2.component';"
+        ],
+        "description": "import shortcut for components."
+    },
+
+    "Angular2 Component": {
+        "prefix": "a2cmp",
+        "body": [
+            "import {Component, OnInit} from '@angular/core';",
+            "",
+            "@Component({",
+            "    selector: '',",
+            "    templateUrl: '',",
+            "    styleUrls: [],",
+            "    providers: []",
+            "})",
+            "export class $2Component implements OnInit {",
+            "    constructor() {",
+            "",
+            "    }",
+            "",
+            "    public ngOnInit(): void {",
+            "",
+            "    }",
+            "}"
+        ],
+        "description": "A generic Angular2 component."
+    },
     
     "Angular Controller": {
-        "prefix": "actrl",
+        "prefix": "aactrl",
         "body": [
             "/**",
             " * @ngdoc controller",
@@ -134,17 +166,17 @@
             " * @description",
             " * $2",
             " */",
-            "class $1Controller implements ng.IComponentController {",
+            "class $1Controller implements ng.IController {",
             "",
             "    // @ngInject",
             "    constructor() {",
             "    }",
             "",
-            "    public $onInit(): void {",
+            "    public \\$onInit(): void {",
             "        $3",
             "    }",
             "",
-            "    public $onDestroy(): void {",
+            "    public \\$onDestroy(): void {",
             "    }",
             "}"
         ],
@@ -185,21 +217,19 @@
         "body": [
             "/**",
             " * @ngdoc object",
-            " * @name module.component.$1",
+            " * @name module.component.$1Component",
             " * @restrict E",
             " *",
             " * @description",
             " * $2",
             " *",
             " */",
-            "const $1Component: ng.IComponentOptions = {",
+            "export const $1Component: ng.IComponentOptions = {",
             "    template:  ``,",
             "    controller: () => {},",
             "    bindings: {",
             "    }",
-            "};",
-            "",
-            "export default $1Component;"
+            "};"
         ],
         "description": "A generic AngularJS component."
     },
